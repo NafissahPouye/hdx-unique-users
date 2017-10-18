@@ -48,8 +48,9 @@ function generatingComponent(vardata){
 
       .brushOn(false)
       .renderHorizontalGridLines(true)
-      .margins({ top: 10, left: 33, right: 0, bottom: 60 })
+      .margins({ top: 10, left: 31, right: 0, bottom: 60 })
       .xAxis().ticks(d3.time.months,1).tickFormat(d3.time.format("%Y-%b"));
+  nbOrgTrends.yAxis().tickFormat(d3.format("d"));
 
 
 nbOrgTrends
